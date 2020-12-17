@@ -17,7 +17,7 @@ function random_bg() {
     body.style.backgroundImage = random_img;
     
 } 
-setInterval(random_bg, 3000);
+setInterval(random_bg, 15000);
 
 
 
