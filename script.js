@@ -17,7 +17,7 @@ function random_bg() {
     body.style.backgroundImage = random_img;
     
 } 
-setInterval(random_bg, 60000);
+setInterval(random_bg, 3000);
 
 
 
@@ -42,4 +42,22 @@ setInterval(show_day, 1000)
 
 
 
+// code Aurore pour éviter array
+// const options = {
+//     weekday: "long",
+//     day: "numeric",
+//     month: "long",
+//     year: "numeric",
+//   };
 
+//   const show_day = () => {
+//     let today = new Date();
+//     let date = today.toLocaleDateString('fr-FR' ou undefined, options)
+//     let timeToday = today.toLocaleTimeString();
+//     const display_date = document.querySelector(".display_date");
+//     const display_clock = document.querySelector(".display_clock");
+//     display_date.textContent =date;
+//     display_clock.textContent = timeToday;
+//   };
+
+//   setInterval(show_day, 1000);
