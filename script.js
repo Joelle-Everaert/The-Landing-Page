@@ -21,4 +21,25 @@ setInterval(random_bg, 60000);
 
 
 
+const days = ['Sunday', 'Monday', 'Tueday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+
+const show_day = () => {
+    let today = new Date();
+    let date = today.getDate();
+    let day = today.getDay();
+    let month = today.getMonth();
+    let year = today.getFullYear();
+    let timeToday = today.toLocaleTimeString()
+    const display_date = document.querySelector('.display_date')
+    const display_clock = document.querySelector('.display_clock')
+    display_date.textContent = days[day] + ' ' + date + ' ' + months[month] + ' ' + year 
+    display_clock.textContent = timeToday
+}
+
+setInterval(show_day, 1000)
+
+
+
 

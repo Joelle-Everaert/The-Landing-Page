@@ -1,9 +1,48 @@
 body{
-    transition: background-image 0.5s ease-in-out;
-    /* background-position: center; */
+    transition: background-image 0.8s ease-in-out;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     padding: 0;
     margin:0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    align-items: flex-end;
+    position: absolute;
+    left: 900px;
+    top: 500px;
+}
+
+@media only screen and (max-width: 450px) {
+    body{
+        height: 90vh;
+    }
+
+    .container{
+        left: 115px;
+        top: 350px; 
+    }
+}
+
+
+.date_timer{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.display_date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.display_clock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
