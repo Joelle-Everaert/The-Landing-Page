@@ -9,9 +9,6 @@ body{
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     position: absolute;
     left: 800px;
     top: 500px;
@@ -94,24 +91,26 @@ a:hover{
 
 @media only screen and (max-width: 450px) {
     body{
-        height: 90vh;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 
     .container{
-        left: 40px;
-        top: 350px; 
+        position:inherit;
+        margin-top: 70%;
     }
 
     .icon{
         font-size: 12px;
-        position: relative;
-        left: 60px;
-        top: 50px;
+        position: inherit;
+        justify-content: center;
         display: flex;
         flex-direction: row;
-        
-
+        margin-top: 5%;
     }
+    
     a{
         width: 40px;
         height: 40px;
