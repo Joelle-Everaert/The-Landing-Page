@@ -98,14 +98,14 @@ a:hover{
     }
 
     .container{
-        left: 20px;
+        left: 40px;
         top: 350px; 
     }
 
     .icon{
         font-size: 12px;
         position: relative;
-        left: 10px;
+        left: 60px;
         top: 50px;
         display: flex;
         flex-direction: row;
